@@ -32,6 +32,15 @@
 							<v-input v-model="linkSelection.url" :placeholder="t('url_placeholder')"></v-input>
 						</div>
 						<div class="field">
+							<div class="type-label">PDF</div>
+							<v-select
+								v-model="linkSelection.url"
+								:items="pdfs"
+								placeholder="Välj en PDF"
+								@update:model-value="linkSelection.url = $event"
+							/>
+						</div>
+						<div class="field">
 							<div class="type-label">{{ t('display_text') }}</div>
 							<v-input v-model="linkSelection.displayText" :placeholder="t('display_text_placeholder')"></v-input>
 						</div>
@@ -185,6 +194,7 @@ import useImage from './useImage';
 import useLink from './useLink';
 import useMedia from './useMedia';
 import useSourceCode from './useSourceCode';
+import api from '@/api';
 
 import 'tinymce/tinymce';
 
@@ -257,6 +267,23 @@ const editorRef = ref<any | null>(null);
 const editorElement = ref<ComponentPublicInstance | null>(null);
 const { imageToken } = toRefs(props);
 const settingsStore = useSettingsStore();
+
+const pdfs = ref([]);
+const selectedPDF = ref(null);
+
+api
+	.get('/files', {
+		params: {
+			'filter[type][_eq]': 'application/pdf',
+		},
+	})
+	.then((response) => {
+		pdfs.value = response.data.data;
+		for (let item of pdfs.value) {
+			item.text = item.filename_download;
+			item.value = '/assets/' + item.filename_disk;
+		}
+	});
 
 let storageAssetTransform = ref('all');
 let storageAssetPresets = ref<SettingsStorageAssetPreset[]>([]);
