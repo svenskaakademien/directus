@@ -9083,8 +9083,17 @@ packages:
     dev: false
     optional: true
 
+<<<<<<< HEAD
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
+=======
+  /cash-dom/8.1.1:
+    resolution: {integrity: sha512-aMESow+8m7EuifAeNhpnRHQHN8O24gGeiR53lebD5ShBCisBCoB4y5BBe9pGXtTPP6b1qCp90W9HaaUARyc16Q==}
+    dev: false
+
+  /ccount/1.1.0:
+    resolution: {integrity: sha512-vlNK021QdI7PNeiUh/lKkC/mNHHfV0m/Ad5JoI0TYtlBnJAslM/JIkm/tGC88bkLIwO6OQ5uV6ztS6kVAtCDlg==}
+>>>>>>> a05f4dd96 (fixed plugin deps)
     dev: true
 
   /chai@4.3.7:
@@ -19786,3 +19795,11 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
+
+  github.com/svenskaakademien/directus-extension-editorjs-interface/018696857c0184c6064dd10e477f3cfc569d809a:
+    resolution: {tarball: https://codeload.github.com/svenskaakademien/directus-extension-editorjs-interface/tar.gz/018696857c0184c6064dd10e477f3cfc569d809a}
+    name: directus-extension-editorjs
+    version: 1.5.0
+    dependencies:
+      cash-dom: 8.1.1
+    dev: false
