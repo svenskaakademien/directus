@@ -37,7 +37,7 @@
 								v-model="linkSelection.url"
 								:items="pdfs"
 								placeholder="Välj en PDF"
-								@update:model-value="linkSelection.url = $event"
+								@update:model-value="linkSelection.url = 'https://sa-admin.lb.se' + $event"
 							/>
 						</div>
 						<div class="field">
