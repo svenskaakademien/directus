@@ -42,7 +42,8 @@ export default defineConfig({
 			{ find: 'json2csv', replacement: 'json2csv/dist/json2csv.umd.js' },
 		],
 	},
-	base: process.env.NODE_ENV === 'production' ? '' : '/admin/',
+	// base: process.env.NODE_ENV === 'production' ? '' : '/admin/',
+	base: '/admin/',
 	server: {
 		port: 8080,
 		proxy: {
