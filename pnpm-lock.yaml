@@ -151,6 +151,9 @@ importers:
       destroy:
         specifier: 1.2.0
         version: 1.2.0
+      directus-extension-editorjs:
+        specifier: github:svenskaakademien/directus-extension-editorjs-interface
+        version: github.com/svenskaakademien/directus-extension-editorjs-interface/018696857c0184c6064dd10e477f3cfc569d809a
       dotenv:
         specifier: 16.0.3
         version: 16.0.3
@@ -9083,17 +9086,12 @@ packages:
     dev: false
     optional: true
 
-<<<<<<< HEAD
-  /ccount@2.0.1:
-    resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
-=======
-  /cash-dom/8.1.1:
+  /cash-dom@8.1.1:
     resolution: {integrity: sha512-aMESow+8m7EuifAeNhpnRHQHN8O24gGeiR53lebD5ShBCisBCoB4y5BBe9pGXtTPP6b1qCp90W9HaaUARyc16Q==}
     dev: false
 
-  /ccount/1.1.0:
-    resolution: {integrity: sha512-vlNK021QdI7PNeiUh/lKkC/mNHHfV0m/Ad5JoI0TYtlBnJAslM/JIkm/tGC88bkLIwO6OQ5uV6ztS6kVAtCDlg==}
->>>>>>> a05f4dd96 (fixed plugin deps)
+  /ccount@2.0.1:
+    resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
     dev: true
 
   /chai@4.3.7:
