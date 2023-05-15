@@ -284,7 +284,7 @@ api
 		pdfs.value = response.data.data;
 		for (let item of pdfs.value) {
 			item.text = item.filename_download;
-			item.value = '/assets/' + item.filename_disk;
+			item.value = '/assets/' + item.filename_disk + '/' + item.filename_download;
 		}
 	});
 
