@@ -24,6 +24,7 @@
 		"build": "vite build",
 		"build-storybook": "storybook build",
 		"dev": "vite --clearScreen false",
+		"start": "vite preview --clearScreen false",
 		"storybook": "storybook dev -p 6006",
 		"test": "vitest --watch=false",
 		"typecheck": "vue-tsc --noEmit -p tsconfig.json"

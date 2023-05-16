@@ -151,9 +151,6 @@ importers:
       destroy:
         specifier: 1.2.0
         version: 1.2.0
-      directus-extension-editorjs:
-        specifier: github:svenskaakademien/directus-extension-editorjs-interface
-        version: github.com/svenskaakademien/directus-extension-editorjs-interface/018696857c0184c6064dd10e477f3cfc569d809a
       dotenv:
         specifier: 16.0.3
         version: 16.0.3
@@ -9085,10 +9082,6 @@ packages:
     resolution: {integrity: sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==}
     dev: false
     optional: true
-
-  /cash-dom@8.1.1:
-    resolution: {integrity: sha512-aMESow+8m7EuifAeNhpnRHQHN8O24gGeiR53lebD5ShBCisBCoB4y5BBe9pGXtTPP6b1qCp90W9HaaUARyc16Q==}
-    dev: false
 
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -19793,11 +19786,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-  github.com/svenskaakademien/directus-extension-editorjs-interface/018696857c0184c6064dd10e477f3cfc569d809a:
-    resolution: {tarball: https://codeload.github.com/svenskaakademien/directus-extension-editorjs-interface/tar.gz/018696857c0184c6064dd10e477f3cfc569d809a}
-    name: directus-extension-editorjs
-    version: 1.5.0
-    dependencies:
-      cash-dom: 8.1.1
-    dev: false
