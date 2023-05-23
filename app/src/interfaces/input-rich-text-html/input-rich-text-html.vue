@@ -274,6 +274,7 @@ const selectedPDF = ref(null);
 api
 	.get('/files', {
 		params: {
+			limit: -1,
 			'filter[type][_in]': [
 				'application/pdf',
 				'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
